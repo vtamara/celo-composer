@@ -14,7 +14,7 @@ import {
 
 const config = getDefaultConfig({
   appName: 'RainbowKit App',
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: process.env.WC_PROJECT_ID ?? 'YOUR_PROJECT_ID',
   chains: [
     celo,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [celoAlfajores] : []),
