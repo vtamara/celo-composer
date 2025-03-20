@@ -12,7 +12,7 @@ export const packageNameMap = {
   subgraphs: "subgraphs",
 };
 
-export const BASE_URL = "https://github.com/celo-org/celo-composer/";
+export const BASE_URL = "https://github.com/vtamara/celo-composer/";
 
 export const getProjectJson = (projectName: string, author: string) => ({
   author,
